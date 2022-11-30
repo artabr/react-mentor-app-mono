@@ -10,7 +10,7 @@
       "options": {
         "target": "node",
         "compiler": "tsc",
-        "outputPath": "dist/apps/api/api",
+        "outputPath": "dist/apps/api/api/movies",
         "webpackConfig": "apps/api/webpack.config.js",
         "filename": "index.js",
         "main": "apps/api/src/index.js",
