@@ -10,7 +10,9 @@
       "options": {
         "target": "node",
         "compiler": "tsc",
-        "outputPath": "dist/apps/api",
+        "outputPath": "dist/apps/api/api",
+        "webpackConfig": "apps/api/webpack.config.js",
+        "filename": "index.js",
         "main": "apps/api/src/index.js",
         "tsConfig": "apps/api/tsconfig.app.json",
         "assets": ["apps/api/src/assets"]
