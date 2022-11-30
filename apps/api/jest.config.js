@@ -1,13 +1,16 @@
+/* eslint-disable */
 module.exports = {
-  collectCoverage: true,
-  verbose: true,
-  collectCoverageFrom: [
-    '**/*.{js,jsx}',
-    '!jest.config.js',
-    '!**/node_modules/**',
-    '!coverage/**',
-    '!src/index.js',
-    '!src/scraper.js',
-  ],
+  displayName: 'api',
+  preset: '../../jest.preset.js',
+  globals: {
+    'ts-jest': {
+      tsconfig: '<rootDir>/tsconfig.spec.json',
+    },
+  },
   testEnvironment: 'node',
-}
+  transform: {
+    '^.+\\.[tj]sx?$': 'ts-jest',
+  },
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  coverageDirectory: '../../coverage/apps/api',
+};

@@ -1,7 +1,7 @@
 const fs = require('fs')
 const KoaRouter = require('koa-router')
 
-const swaggerSpec = fs.readFileSync(`${__dirname}/../../swagger.yaml`)
+const swaggerSpec = fs.readFileSync(`${__dirname}/assets/swagger.yaml`)
 
 const api = KoaRouter()
 
